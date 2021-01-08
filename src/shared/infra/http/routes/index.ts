@@ -1,8 +1,10 @@
 import { Router } from 'express';
 
+import rootRouter from './root';
+
 const routes = Router();
 
-// routes.use('/');
+routes.use('/', rootRouter);
 // routes.use('/profile');
 // routes.use('/sessions');
 // routes.use('/users');
