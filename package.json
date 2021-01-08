@@ -4,6 +4,10 @@
   "main": "server.js",
   "author": "Aaron Stiebler <euaaron@outlook.com>",
   "license": "MIT",
+  "engines": {
+    "node": "12.x",
+    "yarn": "1.22.x"
+  },
   "scripts": {
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files",
     "live": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
