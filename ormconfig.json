@@ -1,0 +1,33 @@
+[
+  {
+    "name": "default",
+    "type": "postgres",
+    "host": "otto.db.elephantsql.com",
+    "port": 5432,
+    "username": "ixrhznyp",
+    "password": "7Sp5PYNyiVEBkiUHoxykafjDIE0I0fqs",
+    "database": "ixrhznyp",
+    "entities": [
+      "./src/modules/**/infra/typeorm/entities/*.ts"
+    ],
+    "migrations": [
+      "./src/shared/infra/typeorm/migrations/*.ts"
+    ],
+    "cli": {
+      "migrationsDir": "./src/shared/infra/typeorm/migrations"
+    }
+  },
+  {
+    "name": "mongo",
+    "type": "mongodb",
+    "username": "casi",
+    "password": "maincasi2020",
+    "host": "main.026tl.mongodb.net",
+    "port": 27017,
+    "database": "casi",
+    "useUnifiedTopology": true,
+    "entities": [
+      "./src/modules/**/infra/typeorm/schemas/*.ts"
+    ]
+  }
+]
