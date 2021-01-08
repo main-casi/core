@@ -3,7 +3,7 @@ dist/
 .vscode/
 .idea/
 
-!.env
-!ormconfig.json
+.env
+ormconfig.json
 yarn.lock
 package-lock.json
