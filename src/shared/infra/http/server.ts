@@ -9,7 +9,7 @@ import routes from '@shared/infra/http/routes';
 import rateLimiter from './middlewares/rateLimiter';
 
 const core = express();
-const port = process.env.APP_PORT || 3333;
+const port = process.env.PORT || 3000;
 
 core.use(cors());
 core.use(express.json());
